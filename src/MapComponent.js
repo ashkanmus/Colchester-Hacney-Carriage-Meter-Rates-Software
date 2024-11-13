@@ -281,9 +281,9 @@ const calculateRate1 = (distanceInMeters, durationInMinutes) => {
   const thirdTierUnitDistance = 535;
   const beyondThirdTierUnitDistance = 320;
 
-  // Waiting time charge settings
+/*   // Waiting time charge settings
   const waitingTimeChargePerPeriod = 0.40;
-  const waitingTimePeriodInSeconds = 65;
+  const waitingTimePeriodInSeconds = 65; */
 
   // Start with the initial charge
   let totalCharge = initialChargeCost;
@@ -343,9 +343,9 @@ const secondTierUnitDistance = 152;
 const thirdTierUnitDistance = 401;
 const beyondThirdTierUnitDistance = 240;
 
-// Waiting time charge settings
+/* // Waiting time charge settings
 const waitingTimeChargePerPeriod = 0.40;
-const waitingTimePeriodInSeconds = 49;
+const waitingTimePeriodInSeconds = 49; */
 
 // Start with the initial charge
 let totalCharge = initialChargeCost;
@@ -405,9 +405,9 @@ const calculateRate3 = (distanceInMeters, durationInMinutes) => {
   const thirdTierUnitDistance = 376;
   const beyondThirdTierUnitDistance = 224;
 
-   // Waiting time charge settings
+/*    // Waiting time charge settings
   const waitingTimeChargePerPeriod = 0.50;
-  const waitingTimePeriodInSeconds = 46;
+  const waitingTimePeriodInSeconds = 46; */
 
    // Start with the initial charge
   let totalCharge = initialChargeCost;
