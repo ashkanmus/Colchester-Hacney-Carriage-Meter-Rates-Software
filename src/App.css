@@ -28,6 +28,41 @@
   color: #61dafb;
 }
 
+.title{
+  font-size: 18px;
+  padding-bottom: 3%;
+}
+
+.btn{
+  font-size: 0.8rem;
+  color: white;
+  background-color: #232531;
+  padding: .4rem .8rem .4rem .8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.res-l li{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgb(17 24 39);
+  background-color: #f0f0f0;
+  padding: .8rem;
+  border-radius: 0.5rem;
+}
+
+.res-p {
+  font-size: .9rem;
+  color: rgb(17 24 39);
+  padding: .8rem;
+  border: 2px solid rgb(17 24 39);
+  border-radius: 0.5rem;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
