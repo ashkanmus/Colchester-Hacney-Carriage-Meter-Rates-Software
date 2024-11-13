@@ -254,12 +254,11 @@ const MapComponent = () => {
         fontSize: '12px',
         zIndex:'1',
         position: 'absolute',
-        right: '5%',
+        right: '2%',
         //transform: 'translateX(-50%)',
         bottom: '1%',
         //left: '50%'
         }}>
-          <p></p>
           <p>Colchester HC Meter Rates - Developed by Ash M Haghighi</p>
           </div>
     </LoadScript>
