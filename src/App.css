@@ -55,10 +55,10 @@
 }
 
 .res-p {
-  font-size: .9rem;
+  font-size: 0.8rem;
   color: rgb(17 24 39);
+  background-color: #f0f0f0;
   padding: .8rem;
-  border: 2px solid rgb(17 24 39);
   border-radius: 0.5rem;
 }
 
