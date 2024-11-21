@@ -132,3 +132,8 @@ hr{
     transform: rotate(360deg);
   }
 }
+
+/* Add this to your CSS file */
+.gm-style-cc { display: none; }
+.gmnoprint { display: none; }
+.gm-style-iw { display: none; }
