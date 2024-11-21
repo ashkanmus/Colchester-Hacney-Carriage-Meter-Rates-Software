@@ -28,7 +28,21 @@
   color: #61dafb;
 }
 
-.title{
+.main-card {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 700px;
+  z-index: 10;
+}
+
+.title {
   font-size: 18px;
   padding-bottom: 3%;
 }
@@ -43,7 +57,7 @@
 }
 
 .res-container{
-  padding-top: 1rem;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -66,8 +80,8 @@
   font-size: 0.8rem;
 }
 
-.res-message p{
-  color: rgb(17 24 39);
+.res-message-box p{
+  color: rgb(5, 68, 2);
 
 }
 
@@ -77,6 +91,7 @@
   gap: 10px;
   padding: 0;
   justify-content: space-between;
+  
 }
 
 .res-label li{
@@ -90,6 +105,7 @@
   padding: .6rem .4rem;
   border-radius: 0.5rem;
   width: 80%;
+  
 }
 
 .res-rates-container{
@@ -106,16 +122,21 @@
   padding: .8rem .4rem;
   border-radius: 0.5rem;
   width: 80%;
+  
 }
 
 .watermark{
-  color: gray;
+  color: rgb(209, 207, 207);
   font-size: 12px;
   z-index: 1;
   position: absolute;
   right: 2%;
   bottom: 1%;
+  background-color: rgba(255, 255, 255, .1);
+  padding: 0 .4rem;
+  border-radius: 0.5rem;
 }
+
 
 hr{
   border: none;
@@ -123,6 +144,7 @@ hr{
   background-color: #e0e0e0;
   margin: 5px 10px;
 }
+
 
 @keyframes App-logo-spin {
   from {
@@ -132,8 +154,3 @@ hr{
     transform: rotate(360deg);
   }
 }
-
-/* Add this to your CSS file */
-.gm-style-cc { display: none; }
-.gmnoprint { display: none; }
-.gm-style-iw { display: none; }

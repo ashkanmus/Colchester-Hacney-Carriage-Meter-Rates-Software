@@ -26,3 +26,19 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ashkanmus/Colchester-Hacney-Carriage-Meter-Rates-Software.git
+
+2. Set your Google Maps API key in the .env file.
+   get api from google cloud platform
+   check .env.example for the variable name
+   make .env file
+   add api key to env file
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```

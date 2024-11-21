@@ -126,19 +126,7 @@ const MapComponent = () => {
         </GoogleMap>
 
         <div
-          style={{
-            position: 'absolute',
-            bottom: '5%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            backgroundColor: '#ffffff',
-            padding: '20px',
-            borderRadius: '25px',
-            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-            width: '80%',
-            maxWidth: '700px',
-            zIndex: 10,
-          }}
+          className='main-card'
         >
           {/* <h1 className='title'>Colchester Hackney Meter Rates</h1> */}
           <div>
@@ -224,7 +212,7 @@ const MapComponent = () => {
               <div className='res-info-container'>
                 <div className='res-message-box'>
                   <p>
-                    Taxis have access to bus lanes, which may result in shorter journey times and lower fares than estimated.
+                    Taxis have access to bus lanes, which may result in <strong>shorter journey times</strong> and <strong>lower fares</strong> than estimated.
                   </p>
                 </div>
                 <ul className='res-label'>
