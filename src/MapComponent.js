@@ -149,7 +149,7 @@ const MapComponent = () => {
             >
               <input
                 type="text"
-                placeholder="Enter pick-up point"
+                placeholder="Enter pick-up postcode"
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
                 ref={originRef}
@@ -184,7 +184,7 @@ const MapComponent = () => {
             >
               <input
                 type="text"
-                placeholder="Enter drop-off point"
+                placeholder="Enter drop-off postcode"
                 value={destination}
                 onChange={(e) => setDestination(e.target.value)}
                 ref={destinationRef}
@@ -220,45 +220,52 @@ const MapComponent = () => {
 
           {/* Display Distance, Duration, and Rates */}
           {distance && duration && (
-            <div>
-              <ul className='res-l'
-              style={{
-                listStyleType:'none',
-                display: 'flex',
-                gap: "10px",
-                justifyContent: 'flex-end'
-              }}>
-                <li> 
-                  <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor"  strokelinecap="round" strokelinejoin="round" width={24} height={24}  strokeWidth={2}> <path d="M3 11a1 1 0 1 1 -1 1.013a1 1 0 0 1 1 -1v-.013z"></path> <path d="M21 11a1 1 0 1 1 -1 1.013a1 1 0 0 1 1 -1v-.013z"></path> <path d="M8 12h8"></path> <path d="M13 9l3 3l-3 3"></path> </svg> 
-                  : 
-                  <strong>{distance}</strong> 
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor"  strokelinecap="round" strokelinejoin="round" width={24} height={24}  strokeWidth={2}> <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path> <path d="M12 10l0 3l2 0"></path> <path d="M7 4l-2.75 2"></path> <path d="M17 4l2.75 2"></path> </svg> 
-                  : 
-                  <strong>{duration}</strong>
-                </li>
-              </ul>
-              <hr></hr>
-              <div style={{display: 'flex', justifyContent:'space-evenly'}}>
-                <p className='res-p'>Rate 1: <strong>£{rates.rate1.toFixed(2)}</strong></p>
-                <p className='res-p'>Rate 2: <strong>£{rates.rate2.toFixed(2)}</strong></p>
-                <p className='res-p'>Rate 3: <strong>£{rates.rate3.toFixed(2)}</strong></p>
+            <div className='res-container'>
+              <div className='res-info-container'>
+                <div className='res-message'>
+                  <p>
+                    Taxis have access to bus lanes, which may result in shorter journey times and lower fares than estimated.
+                  </p>
+                </div>
+                <ul className='res-label'>
+                  <li> 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" width={24} height={24} strokeWidth={2}>
+                      <path d="M3 11a1 1 0 1 1 -1 1.013a1 1 0 0 1 1 -1v-.013z"></path>
+                      <path d="M21 11a1 1 0 1 1 -1 1.013a1 1 0 0 1 1 -1v-.013z"></path>
+                      <path d="M8 12h8"></path>
+                      <path d="M13 9l3 3l-3 3"></path>
+                    </svg>
+                    : <strong>{distance}</strong> 
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" width={24} height={24} strokeWidth={2}>
+                      <path d="M12 13m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                      <path d="M12 10l0 3l2 0"></path>
+                      <path d="M7 4l-2.75 2"></path>
+                      <path d="M17 4l2.75 2"></path>
+                    </svg>
+                    : <strong>{duration}</strong>
+                  </li>
+                </ul>
+              </div>
+              <hr style={{
+                border: 'none',
+                height: '1px',
+                backgroundColor: '#e0e0e0',
+                margin: '15px 0'
+              }} />
+              <div className='res-rates-container'>
+                <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+                  <p className='res-rates'>Rate 1: <strong>£{rates.rate1.toFixed(2)}</strong></p>
+                  <p className='res-rates'>Rate 2: <strong>£{rates.rate2.toFixed(2)}</strong></p>
+                  <p className='res-rates'>Rate 3: <strong>£{rates.rate3.toFixed(2)}</strong></p>
+                </div>
               </div>
             </div>
           )}
         </div>
       </div>
-      <div style={{
-        color:'gray',
-        fontSize: '12px',
-        zIndex:'1',
-        position: 'absolute',
-        right: '2%',
-        //transform: 'translateX(-50%)',
-        bottom: '1%',
-        //left: '50%'
-        }}>
+      <div className='watermark'>
           <p>Colchester HC Meter Rates - Developed by Ash M Haghighi</p>
           </div>
     </LoadScript>
