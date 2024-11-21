@@ -222,7 +222,7 @@ const MapComponent = () => {
           {distance && duration && (
             <div className='res-container'>
               <div className='res-info-container'>
-                <div className='res-message'>
+                <div className='res-message-box'>
                   <p>
                     Taxis have access to bus lanes, which may result in shorter journey times and lower fares than estimated.
                   </p>
@@ -248,18 +248,11 @@ const MapComponent = () => {
                   </li>
                 </ul>
               </div>
-              <hr style={{
-                border: 'none',
-                height: '1px',
-                backgroundColor: '#e0e0e0',
-                margin: '15px 0'
-              }} />
+              <hr />
               <div className='res-rates-container'>
-                <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-                  <p className='res-rates'>Rate 1: <strong>£{rates.rate1.toFixed(2)}</strong></p>
-                  <p className='res-rates'>Rate 2: <strong>£{rates.rate2.toFixed(2)}</strong></p>
-                  <p className='res-rates'>Rate 3: <strong>£{rates.rate3.toFixed(2)}</strong></p>
-                </div>
+                <p className='res-rates'>Rate 1: <strong>£{rates.rate1.toFixed(2)}</strong></p>
+                <p className='res-rates'>Rate 2: <strong>£{rates.rate2.toFixed(2)}</strong></p>
+                <p className='res-rates'>Rate 3: <strong>£{rates.rate3.toFixed(2)}</strong></p>
               </div>
             </div>
           )}
